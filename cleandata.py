@@ -1,8 +1,8 @@
 import pandas as pd
 
-dict_table = pd.read_csv('euro_2024_teams_and_groups.csv')
-df_historical_data = pd.read_csv('uefa_euros_historical_data.csv')
-df_fixture = pd.read_csv('uefa_euro_fixture.csv')
+dict_table = pd.read_csv('./datas/euro_2024_teams_and_groups.csv')
+df_historical_data = pd.read_csv('./datas/uefa_euros_historical_data.csv')
+df_fixture = pd.read_csv('./datas/uefa_euro_fixture.csv')
 
 df_fixture['home'] = df_fixture['home'].str.strip()
 df_fixture['away'] = df_fixture['away'].str.strip()
